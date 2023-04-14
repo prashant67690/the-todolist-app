@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List ❤️</title>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/c2be89540f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="container">
+        <div class="wrapper">
+        <h2>To do List</h2>
+        <div id="todo">
+            <form action="/" method="POST" class="form-container">
+                <div class="search-bar">
+                    <input type="text" class="content" name="content" placeholder="Enter Task">
+                    <input type="text" class="priority" name="priority" placeholder="1-9">
+                    <button type="submit"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <ul class="todo-list">
+                    <% todoTasks.forEach(details =>{ %>
+                        <li class="list-text">
+                            <p><%= details.content %> (  <%= details.priority %> )</p>
+                            <div>
+                            <form action="/remove/<%= details._id%>" method="POST">
+                                <input type="checkbox" name="checkbox" id="box" value="<%= details._id%>" onchange="this.form.submit()">
+                            </form>    
+                            <a href="/edit/<%= details._id%>" class="edit">
+                                <i class="fa fa-pen-to-square"></i>
+                            </a>
+                            <a href="/remove/<%= details._id%>" class="remove">
+                                <i class="fa fa-xmark"></i>
+                            </a>
+                            </div>
+                        </li>
+                    <% }) %>
+                </ul>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

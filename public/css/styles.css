@@ -1,0 +1,103 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Lato&family=Merriweather&family=Montserrat:wght@100;400;700;900&family=Roboto&family=Sacramento&family=Titillium+Web&family=Ubuntu&family=Work+Sans:wght@500&display=swap');
+/* ---------------------  */
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* body css */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    background-color:#DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#container{
+   margin:auto;
+   max-width: 1200px;
+   height: 100vh;
+}
+
+#container .wrapper{
+    margin:100px auto;
+    background-color: #FDF4F5;
+    max-width:600px;
+    padding: 3rem;
+    border: #000 2px solid;    
+}
+
+#container .wrapper h2{
+    text-align: center;
+     font-size: 4rem;
+     line-height: 2;
+}
+
+#box{
+    margin-left: 1rem;
+    height: 30px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* form styling */
+
+#todo .form-container{
+    margin:1rem;
+    display:flex;
+    flex-direction: column; 
+}
+
+#todo .form-container .todo-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#todo .form-container .todo-list .list-text {
+    display: flex;
+    justify-content:baseline;
+    margin: 1rem;
+    margin-top:2rem;
+    margin-left: 1.4rem;
+}
+
+#todo .form-container .todo-list .list-text a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+#todo .form-container .todo-list .list-text div form{
+    display: inline-block;
+}
+
+/* search bar code */
+
+#todo .form-container .search-bar{
+   margin: 1rem;    
+   text-align: center;
+}
+
+#todo .form-container .search-bar .content{
+    width:15rem;
+}
+
+#todo .form-container .search-bar .priority{
+    width:30px;
+}
+
+#todo .form-container .search-bar button{
+   width:3rem;
+}
+#todo .form-container .search-bar input,button{
+    height:2rem;
+    border-radius: 10px;
+    border:#000 1px solid;
+}
+
+
