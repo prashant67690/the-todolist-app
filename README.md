@@ -6,9 +6,10 @@ To install the app, first clone the repository:
 https://github.com/prashant67690/the-todolist-app.git
 
 Then, navigate to the project directory and install the dependencies:
-
->cd node-todo-list
->npm install
+```javascript
+cd node-todo-list
+npm install
+```
 
 ## Usage
 
