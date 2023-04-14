@@ -25,3 +25,12 @@ This will start the server and the app will be available at `http://localhost:30
 - Add tasks to your todo list
 - Edit tasks on your todo list
 - Delete tasks from your todo list
+
+## Dependencies
+You can include a list of dependencies that your app relies on. For example, you might use the following packages:
+
+-Express for building the web server
+-EJS for rendering dynamic HTML templates
+-Body-parser for parsing incoming request bodies
+-Mongoose for connecting to a MongoDB database
+>You can include instructions on how to install each dependency using npm.
